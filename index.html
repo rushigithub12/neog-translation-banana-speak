@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #textInput {
+            width: 20rem;
+            height: 5rem;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: large;
+        }
+        #btnTranslate {
+            display: block;
+            margin: 1rem;
+        }
+        #textOutput {
+            display: block;
+            height: 3rem;
+            width: 20rem;
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+            overflow-y: scroll;
+        }
+        h1, h4 {
+            margin-left: 1rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>banana talk</h1>
+    <textarea id="textInput" placeholder="put your message here which you want to convert to banana language"></textarea>
+    <button id="btnTranslate">Translate to Banana</button>
+    <h4>translation will come here 👇</h4>
+    <div id="textOutput"></div>
+    <script src="./index.js"></script>
 </body>
 </html>

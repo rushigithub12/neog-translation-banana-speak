@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banana Speak</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Indie Flower', cursive;
-}
-header {
-  text-align: center;
-  background-color: yellow;
-  padding: 0.5rem;
-}
-#txtInput {
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
-  width: 30rem;
-  height: 5rem;
-  background-color: yellow;
-  color: black;
-}
-#btnTranslate {
-  display: block;
-  margin: auto;
-  background-color: red;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  border: none;
-  cursor: pointer;
-}
-h4 {
-  text-align: center;
-}
-#txtOutput {
-  margin: auto;
-  border: 1px solid black;
-  width: 30rem;
-  height: 5rem;
-  padding: 1rem;
-  overflow-y: scroll;
-  font-size: 1rem;
-  background-color: yellow;
-  color: black;
-}
-footer {
-  text-align: center;
-  margin: 1rem 0 0 0;
-  background-color: yellow;
-  padding: 1rem;
-}
-@media screen and (max-width: 700px) {
-  #txtInput, #txtOutput {
-        width: 15rem;
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Indie Flower", cursive;
+      }
+      header {
+        text-align: center;
+        background-color: yellow;
+        padding: 0.5rem;
+      }
+      #textInput {
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 30rem;
         height: 5rem;
+        background-color: yellow;
+        color: black;
+      }
+      #btnTranslate {
+        display: block;
+        margin: auto;
+        background-color: red;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      h4 {
+        text-align: center;
+      }
+      #textOutput {
+        margin: auto;
+        border: 1px solid black;
+        width: 30rem;
+        height: 5rem;
+        padding: 1rem;
         overflow-y: scroll;
-  }
-}
+        font-size: 1rem;
+        background-color: yellow;
+        color: black;
+      }
+      footer {
+        text-align: center;
+        margin: 1rem 0 0 0;
+        background-color: yellow;
+        padding: 1rem;
+      }
+      @media screen and (max-width: 700px) {
+        #textInput,
+        #textOutput {
+          width: 15rem;
+          height: 5rem;
+          overflow-y: scroll;
+        }
+      }
     </style>
-</head>
-<body>
-    <h1>banana talk</h1>
-    <textarea id="textInput" placeholder="put your message here which you want to convert to banana language"></textarea>
-    <button id="btnTranslate">Translate to Banana</button>
-    <h4>translation will come here 👇</h4>
-    <div id="textOutput"></div>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>banana talk</h1>
+      </header>
+      <textarea
+        id="textInput"
+        placeholder="put your message here which you want to convert to banana language"
+      ></textarea>
+      <button id="btnTranslate">Translate to Banana</button>
+      <h4>translation will come here 👇</h4>
+      <div id="textOutput"></div>
+    </div>
+
+    <footer>copyright&copy;2022</footer>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

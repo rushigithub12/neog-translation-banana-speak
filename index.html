@@ -6,34 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        #textInput {
-            width: 20rem;
-            height: 5rem;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-            font-size: large;
-        }
-        #btnTranslate {
-            display: block;
-            margin: 1rem;
-        }
-        #textOutput {
-            display: block;
-            height: 3rem;
-            width: 20rem;
-            border: 1px solid black;
-            margin: 1rem;
-            padding: 1rem;
-            overflow-y: scroll;
-        }
-        h1, h4 {
-            margin-left: 1rem;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+header {
+  text-align: center;
+  background-color: yellow;
+  padding: 0.5rem;
+}
+#txtInput {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 30rem;
+  height: 5rem;
+  background-color: yellow;
+  color: black;
+}
+#btnTranslate {
+  display: block;
+  margin: auto;
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+h4 {
+  text-align: center;
+}
+#txtOutput {
+  margin: auto;
+  border: 1px solid black;
+  width: 30rem;
+  height: 5rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  font-size: 1rem;
+  background-color: yellow;
+  color: black;
+}
+footer {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  background-color: yellow;
+  padding: 1rem;
+}
+@media screen and (max-width: 700px) {
+  #txtInput, #txtOutput {
+        width: 15rem;
+        height: 5rem;
+        overflow-y: scroll;
+  }
+}
     </style>
 </head>
 <body>
